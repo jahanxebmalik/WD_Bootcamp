@@ -1,0 +1,38 @@
+/* font-family */
+h1 {
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+
+table {
+    margin: 0 auto;
+}
+
+td {
+    width: 100px;
+    height: 100px;
+}
+
+#toptop{
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
+
+#centercenter{
+    border: 2px solid black;
+}
+
+#leftleft {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#rightright {
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+#bottombottom {
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+}
