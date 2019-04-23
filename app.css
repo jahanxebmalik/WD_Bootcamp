@@ -1,0 +1,25 @@
+h1 {
+    color: red;
+    border: 4px rgba(71, 201, 233, 0.945) dashed; 
+}
+
+li {
+    color: green;
+    border: 2px solid red;
+}
+
+h4 {
+    background: rgb(255, 100, 80);
+}
+
+body {
+    background: pink;
+}
+#special {
+    background: yellow;
+}
+
+.lined {
+    text-decoration: line-through;
+    text-decoration-color: black;
+}
