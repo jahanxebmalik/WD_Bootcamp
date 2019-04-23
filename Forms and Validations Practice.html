@@ -7,12 +7,12 @@
     <title>Forms Demo</title>
 </head>
 <body>
-        <h1>Sign In</h1> -->
+        <!-- <h1>Sign In</h1>
     <form>
         <input type="text" placeholder="username" name="username">
         <input type="password" placeholder="password" name="password">
         <button>Login</button>
-    </form> -->
+    </form>
 <form action="http://www.wikipedia.org">
     <label for="username">Username: </label>
     <input type="text" name="username" id="username" placeholder="username" required>
@@ -23,14 +23,22 @@
     <label for="email">Email: </label>
     <input type="email" id="email" placeholder="email" name="email" required>
     <button>Submit</button>
-</form>
+</form> -->
 <p>Do you prefer cats or dogs?</p>
 <form>
+    <input type="text" placeholder="username" name="username" disabled>
     <label for="dogs">Dogs: </label>
     <input type="radio" id="dogs" name="petchoice" value="DOGS">
     
     <label for="cats">Cats: </label>
     <input type="radio" id="cats" name="petchoice" value="CATS">
+
+<p>How do I feel today?</p>
+<select name="mood" id="mood">
+    <option value="happy">:)</option>
+    <option value="neutral">:|</option>
+    <option value="sad">:(</option>
+</select>
 
     <button>GO!</button>
 </form>
