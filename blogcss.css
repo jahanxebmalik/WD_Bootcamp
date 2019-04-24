@@ -8,7 +8,7 @@ body {
 .dates {
     text-transform: uppercase;
     font-weight: 600;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.2rem;
     color: #3498db;
 }
 
@@ -25,4 +25,8 @@ div p:nth-of-type(1){
 hr {
     background-color: transparent;
     border-top: 1px solid #f1f1f1;
+}
+
+p {
+    font-weight: 400;
 }
