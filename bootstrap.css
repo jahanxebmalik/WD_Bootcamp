@@ -30,6 +30,11 @@ summary {
   display: block;
 }
 
+.flexi {
+  display: flex;
+  flex-wrap: wrap;
+}
+
 audio,
 canvas,
 progress,
@@ -1412,6 +1417,7 @@ body {
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
+  padding: 70px;
 }
 
 input,
@@ -1452,9 +1458,11 @@ img {
 .thumbnail a>img,
 .carousel-inner>.item>img,
 .carousel-inner>.item>a>img {
-  display: block;
+  disply: block;
   max-width: 100%;
-  height: auto;
+  /* height: auto; */
+  width: 350px;
+  height: 250px;
 }
 
 .img-rounded {
@@ -5729,12 +5737,13 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 .navbar-inverse {
-  background-color: #222;
+  background-color: #2c3e50;
   border-color: #080808;
+  color: white;
 }
 
 .navbar-inverse .navbar-brand {
-  color: #9d9d9d;
+  color: white;
 }
 
 .navbar-inverse .navbar-brand:hover,
@@ -5744,11 +5753,11 @@ fieldset[disabled] .navbar-default .btn-link:focus {
 }
 
 .navbar-inverse .navbar-text {
-  color: #9d9d9d;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a {
-  color: #9d9d9d;
+  color: white;
 }
 
 .navbar-inverse .navbar-nav>li>a:hover,
@@ -6173,8 +6182,8 @@ a.badge:focus {
   padding-top: 30px;
   padding-bottom: 30px;
   margin-bottom: 30px;
-  color: inherit;
-  background-color: #eee;
+  color: #2c3e50;
+  background-color: #ecf0f1;
 }
 
 .jumbotron h1,
@@ -8299,5 +8308,7 @@ button.close {
     display: none !important;
   }
 }
+
+
 
 /*# sourceMappingURL=bootstrap.css.map */
