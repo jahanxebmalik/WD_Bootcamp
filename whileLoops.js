@@ -4,7 +4,8 @@
 //PRINT ALL NUMBERS DIVISIBLE BY 5 AND 3 BETWEEN 5 AND 50
 
 var count = -10;
+console.log("PRINT ALL NUMBERS BETWEEN -10 AND 19");
 while (count < 20) {
-    console.log("PRINT ALL NUMBERS BETWEEN -10 AND 19");
+    console.log(count);
     count++;
 }
