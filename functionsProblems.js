@@ -30,3 +30,7 @@ function kebabToSnake(str) {
     return myString;
     //try with: "this - is -a - ---test";
 }
+
+kebabToSnake("hello-wrold"); //"hello_world"
+kebabToSnake("dogs-are-awesome"); //"dogs_are_awesome"
+kebabToSnake("blah"); //"blah"
