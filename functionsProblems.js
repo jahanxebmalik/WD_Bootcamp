@@ -1,10 +1,17 @@
 // Write a function isEven which takes a single numeric argument and returns true if the number is event, and false otherwise
-function isEven(num) {
-    if (num % 2 === 0) {
-        return true;
-    } else return false;
-}
+// function isEven(num) {
+//     if (num % 2 === 0) {
+//         return true;
+//     } else {
+//         return false;
+//     }
+// }
 
+// OR
+
+function isEven(num) {
+    return num % 2 === 0;
+}
 isEven(4); //true
 // Write a function () which takes a single numeric argument and returns the factorial of that number
 function factorial(num) {
@@ -14,6 +21,8 @@ function factorial(num) {
         return num * factorial(num - 1);
     }
 }
+
+console.log(factorial(10));
 
 factorial(5); //120
 factorial(2); //2
