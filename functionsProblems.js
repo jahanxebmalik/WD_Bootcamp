@@ -57,3 +57,17 @@ function kebabToSnake(str) {
 kebabToSnake("hello-wrold"); //"hello_world"
 kebabToSnake("dogs-are-awesome"); //"dogs_are_awesome"
 kebabToSnake("blah"); //"blah"
+
+var num = 8;
+
+function doMath() {
+    num += 1;
+    if (num % 5 == 0) {
+        return true
+    } else {
+        return false
+    }
+}
+
+num += 1;
+// true
