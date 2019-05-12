@@ -13,16 +13,30 @@ function isEven(num) {
     return num % 2 === 0;
 }
 isEven(4); //true
+
 // Write a function () which takes a single numeric argument and returns the factorial of that number
+// function factorial(num) {
+//     if (num === 0) {
+//         return 1;
+//     } else {
+//         return num * factorial(num - 1);
+//     }
+// }
+// console.log(factorial(10));
+
+// OR
+
 function factorial(num) {
-    if (num === 0) {
-        return 1;
-    } else {
-        return num * factorial(num - 1);
+    // define a result variable
+    var result = 1;
+    // calculate factorial and store value in result
+    for (var i = 2; i <= num; i++) {
+        result *= i; //result = result * i
     }
+    // return the result variable
+    return result;
 }
 
-console.log(factorial(10));
 
 factorial(5); //120
 factorial(2); //2
