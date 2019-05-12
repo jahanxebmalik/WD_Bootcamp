@@ -47,7 +47,7 @@ factorial(0); //1
 // Basically, replace "-"s with "_"s
 
 function kebabToSnake(str) {
-    //replace all dashes with
+    //replace all dashes '-' with '_'
     var myString = str.replace(/-/g, "_");
     //return str
     return myString;
