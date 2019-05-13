@@ -26,5 +26,7 @@ console.log(colors);
 console.log(col);
 
 // Unshift and Shift
-colors.unshift("black");
+colors.unshift("black", "blue");
+var uncol = colors.shift();
 console.log(colors);
+console.log(uncol);
