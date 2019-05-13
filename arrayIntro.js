@@ -24,3 +24,7 @@ var col = colors.pop();
 
 console.log(colors);
 console.log(col);
+
+// Unshift and Shift
+colors.unshift("black");
+console.log(colors);
