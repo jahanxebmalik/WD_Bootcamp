@@ -16,7 +16,11 @@ friends[4] = "Amelie";
 var nums = [45, 37, 89, 24];
 nums.length //4
 
-// push/pop
+// push and pop
 var colors = ["red", "orange", "yellow"];
-colors.push("purple", "pink");
+colors.push("purple", "pink", "violet");
+
+var col = colors.pop();
+
 console.log(colors);
+console.log(col);
