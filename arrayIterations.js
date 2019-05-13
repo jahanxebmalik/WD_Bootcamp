@@ -16,3 +16,12 @@ while (count < colors.length) {
 colors.forEach(function (printColor) {
     console.log(printColor);
 });
+
+// Exercise:
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+numbers.forEach(function (colors) {
+    if (colors % 3 === 0) {
+        console.log(colors);
+    }
+});
+// 3, 6, 9
