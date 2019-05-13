@@ -34,3 +34,7 @@ console.log(uncol);
 // indexOf() - To find index of an item in an array
 var index = colors.indexOf("orange"); //2
 console.log(index);
+
+// slice() - to copy parts of an array
+var colcopy = colors.slice(1, 3);
+console.log(colcopy);
