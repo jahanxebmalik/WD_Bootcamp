@@ -8,10 +8,15 @@ friends[0] = "Chuck";
 // To add new data in array
 friends[4] = "Amelie";
 
-// We can initialize an empty Array two way
+// We can initialize an empty Array two ways:  
 // 1. var friends = [];
 // 2. var friends = newArray();
 
 // Array has a length property
 var nums = [45, 37, 89, 24];
 nums.length //4
+
+// push/pop
+var colors = ["red", "orange", "yellow"];
+colors.push("purple", "pink");
+console.log(colors);
