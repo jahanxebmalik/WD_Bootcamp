@@ -30,3 +30,7 @@ colors.unshift("black", "blue");
 var uncol = colors.shift();
 console.log(colors);
 console.log(uncol);
+
+// indexOf() - To find index of an item in an array
+var index = colors.indexOf("orange"); //2
+console.log(index);
