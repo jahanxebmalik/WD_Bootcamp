@@ -15,6 +15,9 @@ window.setTimeout(function () {
             var newTodo = prompt("Enter new todo");
             //add to todos array
             todos.push(newTodo);
+        } else if (input === "remove") {
+            var removeTodo = todos.pop();
+            console.log(removeTodo);
         }
         // ask again for new input
         input = prompt("What would you like to do?");
