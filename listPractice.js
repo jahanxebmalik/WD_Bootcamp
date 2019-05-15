@@ -19,14 +19,15 @@ window.setTimeout(function () {
             // Add to Todo Array
             todos.push(newTodo);
             console.log("Added new todo");
-        } else if
+        } else if (input === "remove") {
+            // Ask about index
+            var index = prompt("Which item do you wish to remove?");
+            // Remove item from the list
+            todos.splice(index, 1);
+            console.log("Deleted Todo");
+        }
+        input = prompt("What do you want to do?");
     }
     console.log("OK! YOU QUIT THE APP");
-
-    // if (input === new) {
-    //     var addTodo = prompt("Add new todo");
-    //     todos.push(addTodo);
-    //     console.log(todos);
-}
 
 }, 500);
