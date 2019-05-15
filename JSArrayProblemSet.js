@@ -1,17 +1,14 @@
 // printReverse()
 // Write a function printRever() that takes an array as an argument and print out the elements in the array in reverse order (don't actually reverse the array itself)
 
-var reverse = [];
-
-function printReverse(input) {
-    for (var i = input.length - 1; i >= 0; i--) {
-        reverse.push(input[i]);
+function printReverse(arr) {
+    for (var i = arr.length - 1; i >= 0; i--) {
+        console.log(arr[i]);
     }
-    reverse.forEach(function (count) {
-        console.log(count);
-
-    });
 }
+
+printReverse([3, 6, 2, 5]);
+
 
 // isUniform ()
 // Write a function isUniform() which takes an array as an argument and returns true if all elements in the array are identical
@@ -19,6 +16,8 @@ function printReverse(input) {
 // isUniform ([2,1,1,1]);   //False
 // isUniform (["a","b","p"]);   //False
 // isUniform (["b","b","b"]);   //True 
+
+
 
 
 // sumArray()
