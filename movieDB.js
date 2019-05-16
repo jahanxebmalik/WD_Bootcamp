@@ -21,12 +21,11 @@ var movies = [{
 ]
 
 function film() {
-    for (var i = 0 i > movies.length, i++) {
-        if (hasWatched !== true) {
-            console.log("You have not seen " + title + " - " + rating + " stars");
+    for (var i = 0; i < movies.length; i++) {
+        if (movies[0].hasWatched !== true) {
+            console.log("You have not seen " + movies[0].title + " - " + movies[0].rating + " stars");
         };
-        else if {
-            console.log("You have watched " + title + " - " + rating + " stars");
+        else {
+            console.log("You have watched " + movies[0].title + " - " + movies[0].rating + " stars");
         }
     }
-}
