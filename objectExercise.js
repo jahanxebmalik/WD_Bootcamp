@@ -29,4 +29,6 @@ var someObject = {
 
 // Write code to retrieve "Malfoy" from someObject 
 someObject.friends[0].name
+// OR
+// someObject["frineds"][0]["name"]
 // Go one "layer" at a time!
