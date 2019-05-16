@@ -31,13 +31,13 @@ var movies = [{
 //     }
 
 movies.forEach(function (movie) {
-    var reuslt = "You have ";
-    if (moveBy.hasWatched) {
-        result += "watched";
+    var result = "You have ";
+    if (movie.hasWatched) {
+        result += "watched ";
     } else {
         result += "not seen ";
     }
-    result += "\"" + movie.title + "\" -";
-    result += movie.rating + "stars";
+    result += "\"" + movie.title + "\" - ";
+    result += movie.rating + " stars";
     console.log(result);
 })
