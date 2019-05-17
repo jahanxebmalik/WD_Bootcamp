@@ -94,4 +94,4 @@ true != true
 false
 
 // Make the string: "Hi There! It's "sunny" out" by using the + sign:
-"Hi There! It\'s" + "\""sunny\" + " out" 
+"Hi There! " + "It\'s \"sunny\" out"
