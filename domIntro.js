@@ -14,3 +14,14 @@ setInterval(function () { //Manipulate
     }
     isBlue = !isBlue;
 }, 1000);
+
+
+// DOM Selectors
+
+// Methods
+// The document comes with a bunch of methods for selecting customElements. We're going to learn about the following 5:
+// 1. document.getElementsByID()
+// 2. document.getElementsByClassName()
+// 3. document.getElementsByTagName()
+// 4. document.querySelector()
+// 5. document.querySelectorAll()
