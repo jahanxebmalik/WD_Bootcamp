@@ -23,6 +23,7 @@
 <body>
 	<h1>Welcome to MY DOM Demo</h1>
 	<p>Corgi mixes are <strong>super</strong> adorable</p>
+	<p class="bold">This is an <strong>awesome</strong> paragraph</p>
 	<img src="https://barrelhorseworld.com/dogs/images/1145823.jpg">
 	<img
 		src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
@@ -34,6 +35,10 @@
 
 		var h1 = document.querySelector("h1");
 		h1.classList.toggle("normal");
+
+		var text = document.querySelector(".bold");
+		text.textContent = "blah blah blah";
+		console.log(text.textContent);
 	</script>
 </body>
 
