@@ -45,3 +45,33 @@ var obj = {
 }
 
 console.log(obj.add(10, 5));
+
+// Namespace Collision
+// To avoid nameSpace collison, use this pattern by creating an empty object
+
+var dogSpace = {};
+dogSpace.speak = function () {
+    return "WOOF!";
+}
+
+console.log(dogSpace.speak());
+
+var catSpace = {};
+catSpace.speak = function () {
+    return "MEOW!";
+}
+
+console.log(catSpace.speak());
+
+// The Keyword "this"
+var comments = {};
+
+comments.data = ["Good job", "Bye", "Lame..."];
+
+comments.print = function print() {
+    this.data.forEach(function (el) {
+        console.log(el);
+    });
+}
+
+console.log(comments.print());
