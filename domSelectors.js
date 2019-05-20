@@ -1,3 +1,18 @@
+// Changing background color after every second
+// var body = document.querySelector("body");
+// var isBlue = false;
+
+// setInterval (function (){
+//     if (isBlue) {
+//         body.style.background = "white";
+//     } else {
+//         body.style.background ="#3498db";
+//     }
+//     isBlue = !isBlue;
+// } ,1000);
+
+
+
 var tag = document.getElementById("highlight");
 
 var tags = document.getElementsByClassName("bolded");
