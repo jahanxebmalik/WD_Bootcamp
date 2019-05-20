@@ -31,3 +31,17 @@ movies.forEach(function (movie) {
     result += movie.rating + " stars";
     console.log(result);
 })
+
+
+// Adding methods to an Object
+var obj = {
+    name: "Jahanzeb",
+    age: 34,
+    isCool: true,
+    friends: ["Faizan", "Tuaseen"],
+    add: function (x, y) {
+        return x + y;
+    }
+}
+
+console.log(obj.add(10, 5));
