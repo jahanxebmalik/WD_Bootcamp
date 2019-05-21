@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style type="text/css">
+		.big {
+			font-size: 100px;
+			color: orange;
+			border: 5px solid red;
+		}
+
+		.normal {
+			font-size: 50px;
+			color: blue;
+			border: 2px solid greenyellow;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h1>Welcome to MY DOM Demo</h1>
+	<p>Corgi mixes are <strong>super</strong> adorable</p>
+	<p class="bold">This is an <strong>awesome</strong> paragraph</p>
+	<a href="https://www.google.com" target="blank">LINK TO GOOGLE</a>
+	<img src="https://barrelhorseworld.com/dogs/images/1145823.jpg">
+	<img
+		src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
+	<script>
+		var p = document.querySelector("p");
+		// p.classList.add("big");			//Add class
+		//p.classlist.remove("big");		//Remove class
+		p.classList.toggle("big");
+
+		var h1 = document.querySelector("h1");
+		h1.classList.toggle("normal");
+
+		var text = document.querySelector(".bold");
+		text.textContent = "blah blah blah";
+		console.log(text.textContent);
+
+		document.querySelector("h1").textContent = "MY FIRST HEADING OF THE PAGE";
+
+		// Get and Set Attibutes
+		var img1 = document.getElementsByTagName("img")[0];
+		img1.getAttribute("src");
+		img1.setAttribute("src", "https://barrelhorseworld.com/dogs/images/1145823d.jpg");
+
+		var a = document.querySelector("a");
+		a.setAttribute("href", "http://www.malikjahanzeb.com");
+
+		a.innerHTML = "LINK TO MY SITE";
+		// OR a.textContent = "LINK TO MY SITE";
+	</script>
+</body>
+
+</html>
