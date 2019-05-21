@@ -22,3 +22,7 @@ console.log(fifth);
 // Sixth Method
 var sixth = document.querySelectorAll("p")[0];
 console.log(sixth);
+
+// Seventh Method
+var seventh = document.querySelector(".special");
+console.log(seventh);
