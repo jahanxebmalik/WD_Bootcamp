@@ -26,3 +26,7 @@ console.log(sixth);
 // Seventh Method
 var seventh = document.querySelector(".special");
 console.log(seventh);
+
+// Eighth Method
+var eighth = document.querySelector("h1 + p");
+console.log(eighth);
