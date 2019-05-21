@@ -29,7 +29,12 @@
     <img
         src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
     <script>
+        var link = document.querySelector("a");
+        link.getAttribute("href"); //www.google.com
+        link.setAttribute("href", "https://www.bing.com");
 
+        var img1 = document.getElementsByTagName("img")[0];
+        img1.setAttribute("srcset", "https://barrelhorseworld.com/dogs/images/1145823c.jpg");
     </script>
 </body>
 
