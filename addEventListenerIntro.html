@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Events Introduction</title>
+</head>
+
+<body>
+    <button>Click Me</button>
+    <p>No One Has Clicked Me Yet</p>
+
+    <script>
+        let button = document.querySelector("button");
+        let paragraph = document.querySelector("p");
+
+        button.addEventListener("click", function () {
+            paragraph.textContent = "Someone Clicked the Button!";
+        });
+    </script>
+</body>
+
+</html>
