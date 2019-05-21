@@ -4,8 +4,8 @@ var first = document.getElementById("first");
 console.log(first);
 
 // Second method
-var second = document.getElementsByClassName("special");
-console.log(second[0]);
+var second = document.getElementsByClassName("special")[0];
+console.log(second);
 
 // Third method
 var third = document.getElementsByTagName("p");
