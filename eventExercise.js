@@ -1,7 +1,7 @@
 // Exercise 1
 // Change color of background after clicking on button
 
-// var button = document.querySelector("button");
+var button = document.querySelector("button");
 // var body = document.querySelector("body");
 // var isGreen = false;
 // -------------------------------------------------------
@@ -24,7 +24,7 @@
 // ---------------------------------------------------------
 // Colt's way of toggling between bg color
 
-var button = document.querySelector("button");
+// var button = document.querySelector("button");
 // var isPurple = false;
 
 // button.addEventListener("click", function () {
@@ -44,7 +44,7 @@ var button = document.querySelector("button");
 // isPurple {
 //     background: isPurple;
 // }
-
+// ---------------------------------------------------------
 button.addEventListener("click", function () {
     document.body.classList.toggle("purple");
 })
