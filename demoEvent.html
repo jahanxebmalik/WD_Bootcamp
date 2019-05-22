@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Demo</title>
+	<style type="text/css">
+		.big {
+			font-size: 100px;
+			color: orange;
+			border: 5px solid red;
+		}
+
+		.normal {
+			font-size: 50px;
+			color: blue;
+			border: 2px solid greenyellow;
+		}
+	</style>
+
+</head>
+
+<body>
+	<h1>Welcome to MY DOM Demo</h1>
+	<p>Corgi mixes are <strong>super</strong> adorable</p>
+	<p class="bold">This is an <strong>awesome</strong> paragraph</p>
+	<a href="https://www.google.com" target="blank">LINK TO GOOGLE</a>
+	<ul>
+		<li>Orchids</li>
+		<li>Succulents</li>
+		<li>Tulips</li>
+	</ul>
+	<img src="https://barrelhorseworld.com/dogs/images/1145823.jpg">
+	<img
+		src="https://static.boredpanda.com/blog/wp-content/uploads/2017/05/corgi-mix-cross-breeds-18-591c39272d49f__605.jpg">
+	<script>
+		// Change text of h1 when its clicked
+		var h1 = document.querySelector("h1");
+		h1.addEventListener("click", function () {
+			alert("Someone clicked on h1");
+		});
+
+		// Display different text in console when click on ul space
+		document.querySelector("ul").addEventListener("click", function () {
+			console.log("YOU CLICKED THE UL!");
+		});
+
+		//Applying color on individual element after adding event listener
+		// Select all li in the document
+		var lis = document.querySelectorAll("li");
+		// Add for loop so that they change color individually when clicked on
+		for (var i = 0; i < lis.length; i++) {
+			lis[i].addEventListener("click", function () {
+				this.style.color = "pink";
+			});
+		}
+	</script>
+</body>
+
+</html>
