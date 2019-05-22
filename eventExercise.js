@@ -25,14 +25,26 @@
 // Colt's way of toggling between bg color
 
 var button = document.querySelector("button");
-var isPurple = false;
+// var isPurple = false;
+
+// button.addEventListener("click", function () {
+//     if (isPurple) {
+//         document.body.style.background = "white";
+//         isPurple = false;
+//     } else {
+//         document.body.style.background = "purple";
+//         isPurple = true;
+//     }
+//     //better way of is // isGreen = !isGreen;
+// })
+
+// Shorter way of doing it
+// Add a CSS class:
+
+// isPurple {
+//     background: isPurple;
+// }
 
 button.addEventListener("click", function () {
-    if (isPurple) {
-        document.body.style.background = "white";
-        isPurple = false;
-    } else {
-        document.body.style.background = "purple";
-        isPurple = true;
-    }
+    document.body.classList.toggle("purple");
 })
