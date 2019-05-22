@@ -54,6 +54,18 @@
 				this.style.color = "pink";
 			});
 		}
+
+		// An Example
+		// We could also rewrite it using a named function
+
+		var button = document.querySelector("button");
+		var paragraph = document.querySelector("p");
+
+		button.addEventListener("click", changeText);
+
+		function changeText() {
+			paragraph.textContent = "Someone clicked the button";
+		}
 	</script>
 </body>
 
