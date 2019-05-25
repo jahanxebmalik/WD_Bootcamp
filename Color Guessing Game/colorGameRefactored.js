@@ -25,6 +25,13 @@ var modeButtons = document.querySelectorAll(".mode");
 init();
 
 function init() {
+    // mode buttons event listeners
+    setupModeButtons();
+    setupSquares();
+    reset();
+}
+
+function setupModeButtons() {
     //mode button event listeners
     for (var i = 0; i < modeButtons.length; i++) {
         modeButtons[i].addEventListener("click", function () {
@@ -48,7 +55,9 @@ function init() {
             // update page to reflect changes
         });
     }
+}
 
+function setupSquares() {
     for (var i = 0; i < squares.length; i++) {
         // add initial colors to squares
         // squares[i].style.backgroundColor = colors[i];
@@ -69,10 +78,7 @@ function init() {
             };
         });
     }
-
-    reset();
 }
-
 
 
 function reset() {
