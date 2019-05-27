@@ -50,6 +50,12 @@
 
     <img src="https://i.imgur.com/OmcQhpN.jpg" alt="Pine Marten">
 
+    <!-- jQuery Events -->
+
+    <button id="submit">Don't Click Me</button>
+    <button id="submit">Seriously Don't Click Me</button>
+    <button id="submit">This is your last warning</button>
+
 
 
     <script>
@@ -71,6 +77,24 @@
         // $("li").addClass("wrong");
         // $("li").first().toggleClass("done");
         $("li:nth-child(2)").toggleClass("done");
+
+        // Select id "Submit" and display Another Click when clicked on button
+        $("#submit").click(function () {
+            console.log('Another Click');
+        })
+
+        // Display alert and change background to pick when button is clicked
+        $('button').click(function () {
+            alert("Someone clicked a button");
+            $(this).css("background", "pink");
+
+        })
+
+        // Display text of clicked button
+        $("button").click(function () {
+            var text = $(this).text();
+            console.log("You clicked " + text);
+        });
     </script>
 </body>
 
