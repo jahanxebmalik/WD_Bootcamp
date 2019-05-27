@@ -7,6 +7,21 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>jQuery Methods</title>
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <style>
+        .correct {
+            color: green;
+        }
+
+        .wrong {
+            color: red;
+            background: pink;
+        }
+
+        .done {
+            color: gray;
+            text-decoration: line-through;
+        }
+    </style>
 </head>
 
 <body>
@@ -21,11 +36,41 @@
         <li>Twix</li>
     </ul>
 
+    <select id="single">
+        <option>Ostrich</option>
+        <option>Turtle</option>
+        <option>Toad</option>
+    </select>
+
+    <select id="multiple" multiple="multiple">
+        <option selected="selected">Multiple</option>
+        <option>Multiple2</option>
+        <option selected="selected">Multiple3</option>
+    </select>
+
     <img src="https://i.imgur.com/OmcQhpN.jpg" alt="Pine Marten">
 
+
+
     <script>
+        // val()
+        // text()
+        // attr()
+        // html()
+        // addClass()
+        // removeClass()
+        // toggleClass()
+
         $("h1").text("New HEADING!"); //textContent()
-        $("ul").html("<li>Bounty</li>"); //innerHTML
+        // $("ul").html("<li>Bounty</li>"); //innerHTML
+        $('img').css('width', '200px');
+        $('img').attr('src',
+            'https://i.dailymail.co.uk/i/pix/2013/06/21/article-2346010-1A6F274E000005DC-784_634x542.jpg');
+        $("select").val(); //gives selected value from dropdown
+        $("h1").addClass("correct");
+        // $("li").addClass("wrong");
+        // $("li").first().toggleClass("done");
+        $("li:nth-child(2)").toggleClass("done");
     </script>
 </body>
 
