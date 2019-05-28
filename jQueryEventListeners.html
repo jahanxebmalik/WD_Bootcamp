@@ -27,6 +27,9 @@
 <body>
 
     <h1>jQuery Methods Demo Page</h1>
+    <h1>jQuery Methods Demo Page</h1>
+    <h1>jQuery Methods Demo Page</h1>
+    <h1>jQuery Methods Demo Page</h1>
 
     <input type="text" placeholder="your name">
 
@@ -84,9 +87,21 @@
 
         // keypress()
         // Listen for any keypress in any text input
-        $('input[type = "text').keypress(function () {
-            alert("text input keypress");
-        });
+        // $('input[type = "text').keypress(function () {
+        //     alert("text input keypress");
+        // });
+
+        // https://www.cambiaresearch.com/articles/15/javascript-char-codes-key-codes
+
+        // $("input").keypress(function (event) {
+        //     if (event.which === 13) {
+        //         alert("YOU HIT ENTER!!!");
+        //     }
+        // })
+
+        $('h1').on("click", function () {
+            $(this).css("color", "pink");
+        })
     </script>
 </body>
 
