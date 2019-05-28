@@ -73,17 +73,17 @@
         })
 
         // Display alert and change background to pick when button is clicked
-        $('button').click(function () {
-            alert("Someone clicked a button");
-            $(this).css("background", "pink");
+        // $('button').click(function () {
+        //     alert("Someone clicked a button");
+        //     $(this).css("background", "pink");
 
-        })
+        // })
 
-        // Display text of clicked button
-        $("button").click(function () {
-            var text = $(this).text();
-            console.log("You clicked " + text);
-        });
+        // // Display text of clicked button
+        // $("button").click(function () {
+        //     var text = $(this).text();
+        //     console.log("You clicked " + text);
+        // });
 
         // keypress()
         // Listen for any keypress in any text input
@@ -99,9 +99,23 @@
         //     }
         // })
 
+        //on()
         $('h1').on("click", function () {
             $(this).css("color", "pink");
-        })
+        });
+
+        $("input").on("keypress", function () {
+            console.log("keypressed!");
+        });
+
+        $("button").on("mouseenter", function () {
+            $(this).css("font-weight", "bold");
+        });
+
+
+        $("button").on("mouseleave", function () {
+            $(this).css("font-weight", "normal");
+        });
     </script>
 </body>
 
