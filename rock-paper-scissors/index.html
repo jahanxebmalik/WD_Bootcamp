@@ -15,8 +15,8 @@
     </header>
 
     <div class="score-board">
-        <div id="user-labe" class="badge">user</div>
-        <div id="comp-label" class="badge">comp</div>
+        <div id="user-label" class="badge">user</div>
+        <div id="computer-label" class="badge">comp</div>
         <span id="user-score">0</span>:<span id="computer-score">0</span>
     </div>
 
@@ -24,19 +24,21 @@
         <p>Paper covers rock. You win!</p>
     </div>
 
-    <div class="choices">
+    <div class="choices" id="r">
         <div class="choice">
             <img src="images/rock.png" alt="">
         </div>
-        <div class="choice">
+        <div class="choice" id="p">
             <img src="images/paper.png" alt="">
         </div>
-        <div class="choice">
+        <div class="choice" id="s">
             <img src="images/scissors.png" alt="">
         </div>
     </div>
 
-    <script src="app.js"></script>
+    <p id="action-message">Make your move.</p>
+
+    <script type="text/javascript" src="app.js"></script>
 </body>
 
 </html>
