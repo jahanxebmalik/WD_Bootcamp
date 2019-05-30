@@ -29,9 +29,11 @@ function win(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} beats ${convertToWord(computerChoice)}${smallCompWord}. You win!`;
     userChoice_div.classList.add("green-glow");
-    setTimeout(function () {
-        userChoice_div.classList.remove("green-glow")
-    }, 300);
+    // setTimeout(function () {
+    //     userChoice_div.classList.remove("green-glow")
+    // }, 300);
+    // ES6 Code improvement
+    setTimeout(() => userChoice_div.classList.remove("green-glow"), 300);
 }
 
 function lose(userChoice, computerChoice) {
@@ -43,9 +45,11 @@ function lose(userChoice, computerChoice) {
     computerScore_span.innerHTML = computerScore;
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} loses to ${convertToWord(computerChoice)}${smallCompWord}. You lost!`;
     userChoice_div.classList.add("red-glow");
-    setTimeout(function () {
-        userChoice_div.classList.remove("red-glow")
-    }, 300);
+    // setTimeout(function () {
+    //     userChoice_div.classList.remove("red-glow")
+    // }, 300);
+    // ES6 Code Improvement
+    setTimeout(() => userChoice_div.classList.remove("red-glow"), 300);
 }
 
 function draw(userChoice, computerChoice) {
@@ -54,9 +58,11 @@ function draw(userChoice, computerChoice) {
     const userChoice_div = document.getElementById(userChoice);
     result_p.innerHTML = `${convertToWord(userChoice)}${smallUserWord} equals ${convertToWord(computerChoice)}${smallCompWord}. It's a draw!`;
     userChoice_div.classList.add("gray-glow");
-    setTimeout(function () {
-        userChoice_div.classList.remove("gray-glow")
-    }, 300);
+    // setTimeout(function () {
+    //     userChoice_div.classList.remove("gray-glow")
+    // }, 300);
+    // ES6 Code Improvement
+    setTimeout(() => userChoice_div.classList.remove("gray-glow"), 300);
 }
 
 function game(userChoice) {
@@ -85,17 +91,19 @@ function game(userChoice) {
 
 
 function main() {
-    rock_div.addEventListener("click", function () {
-        game("r");
-    });
-
-    paper_div.addEventListener("click", function () {
-        game("p");
-    });
-
-    scissors_div.addEventListener("click", function () {
-        game("s");
-    });
+    // ES 6 Code improvement
+    // rock_div.addEventListener("click", function () {
+    //     game("r");
+    // });    
+    rock_div.addEventListener("click", () => game("r"));
+    // paper_div.addEventListener("click", function () {
+    //     game("p");
+    // });
+    paper_div.addEventListener("click", () => game("p"));
+    // scissors_div.addEventListener("click", function () {
+    //     game("s");
+    // });
+    scissors_div.addEventListener("click", () => game("s"));
 }
 
 main();
