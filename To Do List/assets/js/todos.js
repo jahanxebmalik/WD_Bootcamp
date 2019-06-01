@@ -43,8 +43,4 @@ $("input[type='text']").keypress(function (event) {
 
 $("#toggleForm").click(function () {
     $("input[type='text']").fadeToggle();
-})
-
-// $("#toggle-form").click(function(){
-// 	$("input[type='text']").fadeToggle();
-// });
+});
