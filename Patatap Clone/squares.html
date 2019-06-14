@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Squares Static Grid</title>
+    <link rel="stylesheet" href="squares.css">
+    <!-- Load the Paper.js library -->
+    <script type="text/javascript" src="js/paper.js"></script>
+    <!-- Define inlined PaperScript associate it with myCanvas -->
+    <script type="text/paperscript" canvas="myCanvas">
+        for(x = 50; x < 1000; x+=200) {
+            for(y = 50; y < 1000; y+=200){
+                var rectangle = new Rectangle(new Point(x, y), new Point(x+130, y+70));
+                var radius = new Size(30, 30);
+                var path = new Path.Rectangle(rectangle, radius);
+            path.fillColor = 'blue';
+            }      
+    } 
+        
+</script>
+</head>
+
+<body>
+    <canvas id="myCanvas" resize></canvas>
+</body>
+
+</html>
